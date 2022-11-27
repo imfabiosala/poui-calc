@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { CalcModule } from './calc/calc.module'; /* Import Calc Module */
+import { CalcModule } from './calc'; /* Import Calc Module (index) */
+
+/* import { CalcModule } from './calc/calc.module'; Import Calc Module */
 
 @NgModule({
   declarations: [
