@@ -25,7 +25,7 @@ export class CalcService {
 
   calc(num1: number, num2: number, opr: string): number {
 
-    let res: number;
+    let res: number; /* let = escopo local */
 
     switch(opr) {
     
