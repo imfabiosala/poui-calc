@@ -10,7 +10,29 @@ describe('CalcService', () => {
     service = TestBed.inject(CalcService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it('must ensure that: (1 + 1 = 2)', () => {
+      let sum = service.calc(1, 1, CalcService.SUM);
+      expect(sum).toEqual(2);
   });
+
+  it('must ensure that: (3 - 1 = 2)', () => {
+    let sub = service.calc(3, 1, CalcService.SUB);
+    expect(sub).toEqual(2);
+  });
+
+  it('must ensure that: (6 / 2 = 3)', () => {
+    let div = service.calc(6, 2, CalcService.DIV);
+    expect(div).toEqual(3);
+  });
+
+  it('must ensure that: (3 * 2 = 6)', () => {
+    let mul = service.calc(3, 2, CalcService.MUL);
+    expect(mul).toEqual(6);
+  });
+
+  it('must ensure that: (4 % 2 = 0)', () => {
+    let mul = service.calc(4, 2, '%');
+    expect(mul).toEqual(0);
+  });
+
 });
