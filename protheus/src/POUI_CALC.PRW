@@ -1,7 +1,7 @@
 #Include "protheus.ch"
 #Include "totvs.ch"
 
-User Function PoUiCalc()
+User Function POUICALC()
 
     FwCallApp("poui-calc")
 
